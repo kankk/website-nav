@@ -5,10 +5,12 @@
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app'
+  }
+
 </script>
 
-<style>
+<style lang="scss">
+  @import './assets/styles/reset.css';
 </style>
