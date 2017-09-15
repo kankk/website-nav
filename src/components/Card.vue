@@ -3,8 +3,7 @@
     <div class="card">
       <div class="card-title">
         <img v-if="card.icon" :src="card.icon">
-        <img v-else src="./../assets/default.png">
-        {{ card.title }}
+        <img v-else src="./../assets/default.png"> {{ card.title }}
       </div>
       <div class="card-desc">
         {{ card.description }}
@@ -39,6 +38,9 @@
     height: $card-height;
     box-sizing: border-box;
     border: $card-border;
+    box-shadow: $card-box-shadow;
+    border-radius: 6px;
+    padding: $card-padding;
     float: left;
 
     .card-title {
@@ -50,6 +52,7 @@
       padding: 0 .1rem;
       height: $card-title-height;
       img {
+        border-radius: 50%;
         display: inline-block;
         vertical-align: middle;
         width: $card-logo-hw;
@@ -58,9 +61,11 @@
     }
 
     .card-desc {
-      height: $card-height - $card-title-height;
+      height: $card-height - $card-title-height - $card-padding - $card-desc-padding * 2;
       font-size: $sub-font-size;
+      color: gray;
       overflow: hidden;
+      padding: $card-desc-padding 0px;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 4;
@@ -71,35 +76,35 @@
   @media (max-width: 480px) {
     .card {
       width: 80%;
-      margin: 5px 9%;
+      margin: $card-margin-top 9% 0;
     }
   }
 
   @media (min-width: 481px) {
     .card {
       width: 43%;
-      margin: 5px 3%;
+      margin: $card-margin-top 3% 0;
     }
   }
 
   @media (min-width: 768px) {
     .card {
       width: 30%;
-      margin: 5px 1.5%;
+      margin: $card-margin-top 1.5% 0;
     }
   }
 
   @media (min-width: 1040px) {
     .card {
       width: 23%;
-      margin: 5px 0.85%;
+      margin: $card-margin-top 0.85% 0;
     }
   }
 
   @media (min-width: 1200px) {
     .card {
       widows: 18%;
-      margin: 5px 1%;
+      margin: $card-margin-top 1% 0;
     }
   }
 
