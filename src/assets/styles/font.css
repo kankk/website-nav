@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'PingLight';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PingFangSC Light'), local('PingFangSC-Light')
+}
+
+@font-face {
+  font-family: 'PingRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PingFangSC-Regular'), local('PingFangSC-Regular')
+}

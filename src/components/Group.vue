@@ -1,6 +1,6 @@
 <template>
   <div class="group">
-    <h1>{{ website.group }}</h1>
+    <p class="group-title">{{ website.group }}</p>
     <Card v-for="link in website.links" :key="link.title" :card="link"></Card>
   </div>
 </template>
@@ -30,10 +30,14 @@
 
   .group {
     margin: $group-margin-top $group-margin-horizontal $group-margin-bottom $group-margin-horizontal;
-    border: $group-border;
     background-color: $group-bgColor;
-    padding: 1%;
+    padding: 1% 1% 20px 1%;
     overflow: hidden;
+
+    .group-title {
+      padding: 12px 0 0 2%;
+      font-family: "PingRegular";
+    }
   }
 
 </style>

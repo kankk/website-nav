@@ -10,12 +10,12 @@ const team = {
     title: '奇舞团',
     link: 'https://75team.com/',
     description: '奇虎360前端开发团队',
-    icon: '',
+    icon: './static/icons/75team.png',
   }, {
     title: '凹凸实验室',
     link: 'https://aotu.io/',
     description: '京东用户体验设计部',
-    icon: '',
+    icon: './static/icons/aotu.png',
   }]
 };
 
@@ -26,17 +26,17 @@ const community = {
     title: '掘金',
     link: 'https://juejin.im/',
     description: '中文技术社区',
-    icon: '',
+    icon: './static/icons/gold.png',
   }, {
     title: 'SegmentFault',
     link: 'https://segmentfault.com/',
     description: '中文IT技术问答网站',
-    icon: '',
+    icon: './static/icons/segmentfault.png',
   }, {
     title: 'GitHub',
     link: 'https://github.com/',
     description: '开源/私有软件项目的Git托管平台',
-    icon: '',
+    icon: './static/icons/github.png',
   }]
 };
 
@@ -47,7 +47,7 @@ const portal = {
     title: 'W3cplus',
     link: 'http://www.w3cplus.com/',
     description: '推广前端行业技术',
-    icon: ''
+    icon: './static/icons/w3cplus.png'
   }, {
     title: '大前端',
     link: 'http://www.daqianduan.com/',
@@ -63,12 +63,12 @@ const frame = {
     title: 'Vue (官方中文)',
     link: 'https://cn.vuejs.org/',
     description: '构建数据驱动的web界面的渐进式框架',
-    icon: ''
+    icon: './static/icons/vue.png'
   }, {
     title: 'React (官方英文)',
     link: 'https://facebook.github.io/react/',
     description: '用于构建用户界面的JavaScript库',
-    icon: ''
+    icon: './static/icons/react.png'
   }]
 };
 
@@ -99,12 +99,12 @@ const css = {
     title: 'SASS',
     link: 'http://sass.bootcss.com/',
     description: 'CSS扩展语言',
-    icon: ''
+    icon: './static/icons/sass.png'
   }, {
     title: 'Less',
     link: 'http://less.bootcss.com/',
     description: '将css赋予了动态语言特性的动态式语言',
-    icon: ''
+    icon: './static/icons/less.png'
   }]
 };
 
@@ -126,11 +126,12 @@ const feTool = {
     title: 'Webpack',
     link: 'https://doc.webpack-china.org/',
     description: '代码模块化构建打包工具',
-    icon: ''
+    icon: './static/icons/webpack.png'
   }, {
     title: 'Babel',
     link: 'https://babeljs.io/',
-    description: '使用最新的规范来编写js'
+    description: '使用最新的规范来编写js',
+    icon: './static/icons/babel.png'
   }]
 };
 
@@ -140,13 +141,13 @@ const onlineTool = {
   links: [{
     title: 'Regexper',
     link: 'https://regexper.com/',
-    description: '图形化正则表达式',
+    description: '可视化正则表达式',
     icon: ''
   }, {
     title: 'CodePen',
     link: 'http://codepen.io/',
     description: '在线代码测试工具',
-    icon: ''
+    icon: './static/icons/codepen.png'
   }]
 };
 
