@@ -1,5 +1,6 @@
 // 团队组织
 const team = {
+  id: 'team',
   group: '团队组织',
   links: [{
     title: 'AlloyTeam',
@@ -21,6 +22,7 @@ const team = {
 
 // 社区
 const community = {
+  id: 'community',
   group: '社区',
   links: [{
     title: '掘金',
@@ -42,6 +44,7 @@ const community = {
 
 // 前端门户
 const portal = {
+  id: 'portal',
   group: '前端门户',
   links: [{
     title: 'W3cplus',
@@ -58,6 +61,7 @@ const portal = {
 
 // 框架类库
 const frame = {
+  id: 'frame',
   group: '框架类库',
   links: [{
     title: 'Vue (官方中文)',
@@ -73,6 +77,7 @@ const frame = {
 };
 
 const doc = {
+  id: 'doc',
   group: '文档',
   links: [{
     title: 'Vue',
@@ -94,6 +99,7 @@ const doc = {
 
 // CSS
 const css = {
+  id: 'css',
   group: 'CSS',
   links: [{
     title: 'SASS',
@@ -110,6 +116,7 @@ const css = {
 
 // Node.js
 const node = {
+  id: 'node',
   group: 'Node',
   links: [{
     title: 'Express',
@@ -121,6 +128,7 @@ const node = {
 
 // 前端工具
 const feTool = {
+  id: 'feTool',
   group: '前端工具',
   links: [{
     title: 'Webpack',
@@ -137,6 +145,7 @@ const feTool = {
 
 // 在线工具
 const onlineTool = {
+  id: 'onlineTool',
   group: '在线工具',
   links: [{
     title: 'Regexper',
@@ -153,6 +162,7 @@ const onlineTool = {
 
 // 大牛博客
 const blog = {
+  id: 'blog',
   group: '大牛博客',
   links: [{
     title: '张鑫旭',
@@ -163,6 +173,7 @@ const blog = {
 };
 
 const design = {
+  id: 'design',
   group: '设计相关',
   links: [{
     title: 'Iconfont',

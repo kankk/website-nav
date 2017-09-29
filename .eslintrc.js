@@ -9,6 +9,10 @@ module.exports = {
     "es6": true,
     "node": true
   },
+  "ecmaFeatures": {
+    // 解构赋值  
+    "destructuring": true,
+  },
   "extends": "eslint:recommended",
   "plugins": [
     'html'
