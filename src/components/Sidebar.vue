@@ -12,6 +12,7 @@
     props: ['websites'],
     data() {
       return {
+        childrenArr: null,
         groupOffsetTop: {}
       }
     },
@@ -30,19 +31,36 @@
         e.target.className = 'active';
         const toElement = document.getElementById(clickId);
         document.body.scrollTop = toElement.offsetTop;
-      }
-    },
-    mounted() {
-      const sidebarUl = document.getElementById('sidebar-ul');
-      const children = sidebarUl.children;
-      const childrenArr = Array.from(children);
-      for (const item of childrenArr) {
-        const id = item.dataset.id;
-        const el = document.getElementById(id);
-        this.groupOffsetTop[id] = el.offsetTop;
-      }
+      },
+      throttle(fn, wait) {
+        let timeout, context, args;
+        let previous = 0;
 
-      window.addEventListener('scroll', () => {
+        const later = () => {
+          previous = +new Date();
+          timeout = null;
+          fn.apply(context, args);
+        };
+
+        const throttled = (..._args) => {
+          const now = +new Date();
+          const remaining = wait - (now - previous);
+          context = this;
+          args = _args;
+          if (remaining <= 0 || remaining > wait) {
+            if (timeout) {
+              clearTimeout(timeout);
+              timeout = null;
+            }
+            previous = now;
+            fn.apply(context, args);
+          } else if (!timeout) {
+            timeout = setTimeout(later, remaining);
+          }
+        };
+        return throttled;
+      },
+      onScrollHandler() {
         const _scrollTop = document.body.scrollTop + 21;
         let currentGroupId;
         let minOffset;
@@ -63,14 +81,29 @@
         }
 
         // 设置符合条件的li为active状态
-        for (const item of childrenArr) {
+        for (const item of this.childrenArr) {
           if (item.dataset.id === currentGroupId) {
             item.className = 'active';
           } else {
             item.className = '';
           }
         }
-      });
+      }
+    },
+    mounted() {
+      const sidebarUl = document.getElementById('sidebar-ul');
+      const children = sidebarUl.children;
+      this.childrenArr = Array.from(children);
+      for (const item of this.childrenArr) {
+        const id = item.dataset.id;
+        const el = document.getElementById(id);
+        this.groupOffsetTop[id] = el.offsetTop;
+      }
+
+      // 初始化active状态
+      this.onScrollHandler();
+
+      window.addEventListener('scroll', this.throttle(this.onScrollHandler, 100));
     }
   }
 
