@@ -55,7 +55,7 @@ const portal = {
     title: '大前端',
     link: 'http://www.daqianduan.com/',
     description: '前端技术',
-    icon: ''
+    icon: './static/icons/daqianduan.png'
   }]
 };
 
@@ -73,13 +73,24 @@ const frame = {
     link: 'https://facebook.github.io/react/',
     description: '用于构建用户界面的JavaScript库',
     icon: './static/icons/react.png'
+  }, {
+    title: 'React-Native',
+    link: 'https://reactnative.cn/',
+    description: '使用React构建原生app的框架',
+    icon: './static/icons/react.png'
   }]
 };
 
+// 文档
 const doc = {
   id: 'doc',
   group: '文档',
   links: [{
+    title: 'ECMAScript6 教程',
+    link: 'http://es6.ruanyifeng.com/',
+    description: '阮一峰出品老师的ECMAScript6教程',
+    icon: './static/icons/ecmascript6.png'
+  },{
     title: 'Vue',
     link: 'https://cn.vuejs.org/v2/guide/',
     description: '',
