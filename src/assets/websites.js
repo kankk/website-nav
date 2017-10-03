@@ -39,6 +39,11 @@ const community = {
     link: 'https://github.com/',
     description: '开源/私有软件项目的Git托管平台',
     icon: './static/icons/github.png',
+  }, {
+    title: 'React China',
+    link: 'http://react-china.org/',
+    description: '',
+    icon: './static/icons/reactchina.png',
   }]
 };
 
@@ -64,13 +69,18 @@ const frame = {
   id: 'frame',
   group: '框架类库',
   links: [{
-    title: 'Vue (官方中文)',
+    title: 'Vue (中文)',
     link: 'https://cn.vuejs.org/',
     description: '构建数据驱动的web界面的渐进式框架',
     icon: './static/icons/vue.png'
   }, {
-    title: 'React (官方英文)',
+    title: 'React (英文)',
     link: 'https://facebook.github.io/react/',
+    description: '用于构建用户界面的JavaScript库',
+    icon: './static/icons/react.png'
+  }, {
+    title: 'React (中文)',
+    link: 'http://www.react-cn.com/',
     description: '用于构建用户界面的JavaScript库',
     icon: './static/icons/react.png'
   }, {
@@ -103,6 +113,11 @@ const doc = {
   }, {
     title: 'Vuex',
     link: 'https://vuex.vuejs.org/zh-cn/',
+    description: '',
+    icon: ''
+  }, {
+    title: 'react-router',
+    link: 'http://www.uprogrammer.cn/react-router-cn/index.html',
     description: '',
     icon: ''
   }]
