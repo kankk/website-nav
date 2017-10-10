@@ -100,26 +100,41 @@ const doc = {
     link: 'http://es6.ruanyifeng.com/',
     description: '阮一峰出品老师的ECMAScript6教程',
     icon: './static/icons/ecmascript6.png'
-  },{
+  }, {
+    title: 'JavaScript 标准参考教程',
+    link: 'http://javascript.ruanyifeng.com/',
+    description: '阮一峰出品老师的JavaScript教程',
+    icon: './static/icons/javascript.png'
+  }, {
     title: 'Vue',
     link: 'https://cn.vuejs.org/v2/guide/',
-    description: '',
-    icon: ''
+    description: '官网指南',
+    icon: './static/icons/vue.png'
+  }, {
+    title: 'Vue 风格指南',
+    link: 'https://cn.vuejs.org/v2/style-guide/',
+    description: '官方代码风格指南',
+    icon: './static/icons/vue.png'
   }, {
     title: 'vue-router',
     link: 'https://router.vuejs.org/zh-cn/',
     description: '',
-    icon: ''
+    icon: './static/icons/vue.png'
   }, {
     title: 'Vuex',
     link: 'https://vuex.vuejs.org/zh-cn/',
     description: '',
-    icon: ''
+    icon: './static/icons/vue.png'
   }, {
     title: 'react-router',
     link: 'http://www.uprogrammer.cn/react-router-cn/index.html',
     description: '',
-    icon: ''
+    icon: './static/icons/vue.png'
+  }, {
+    title: 'jQuery API (英文)',
+    link: 'http://api.jquery.com/',
+    description: '',
+    icon: './static/icons/jquery.png'
   }]
 };
 
@@ -219,5 +234,6 @@ export default [
   node,
   feTool,
   onlineTool,
-  blog
+  blog,
+  design
 ]
