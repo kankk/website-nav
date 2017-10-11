@@ -106,6 +106,11 @@ const doc = {
     description: '阮一峰出品老师的JavaScript教程',
     icon: './static/icons/javascript.png'
   }, {
+    title: 'MDN web doc',
+    link: 'https://developer.mozilla.org/zh-CN/',
+    description: '',
+    icon: './static/icons/mdn.png'
+  }, {
     title: 'Vue',
     link: 'https://cn.vuejs.org/v2/guide/',
     description: '官网指南',
@@ -129,7 +134,12 @@ const doc = {
     title: 'react-router',
     link: 'http://www.uprogrammer.cn/react-router-cn/index.html',
     description: '',
-    icon: './static/icons/vue.png'
+    icon: './static/icons/react.png'
+  }, {
+    title: 'Redux',
+    link: 'http://cn.redux.js.org/index.html',
+    description: '',
+    icon: './static/icons/redux.png'
   }, {
     title: 'jQuery API (英文)',
     link: 'http://api.jquery.com/',
