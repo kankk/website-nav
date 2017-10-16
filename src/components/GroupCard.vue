@@ -1,11 +1,11 @@
 <template>
-  <a class="card-a" target="_blank" :href="card.link">
-    <div class="card">
-      <div class="card-title">
+  <a class="groupcard-a" target="_blank" :href="card.link">
+    <div class="groupcard">
+      <div class="groupcard-title">
         <img v-if="card.icon" :src="card.icon">
         <img v-else src="./../assets/default.png"> {{ card.title }}
       </div>
-      <div class="card-desc">
+      <div class="groupcard-desc">
         {{ card.description }}
       </div>
     </div>
@@ -14,8 +14,13 @@
 
 <script>
   export default {
-    name: 'Card',
-    props: ['card'],
+    name: 'GroupCard',
+    props: {
+      card: {
+        type: Object,
+        required: true
+      }
+    },
     data() {
       return {
 
@@ -30,42 +35,42 @@
 
 <style lang="scss" scope>
   @import '../assets/styles/common.sass';
-  .card-a {
+  .groupcard-a {
     text-decoration: none;
   }
 
-  .card {
-    height: $card-height;
+  .groupcard {
+    height: $groupcard-height;
     box-sizing: border-box;
-    border: $card-border;
-    box-shadow: $card-box-shadow;
+    border: $groupcard-border;
+    box-shadow: $groupcard-box-shadow;
     border-radius: 6px;
-    padding: $card-padding;
+    padding: $groupcard-padding;
     float: left;
 
-    .card-title {
+    .groupcard-title {
       font-size: $main-font-size;
       font-weight: 700;
       color: #3273dc;
       overflow: hidden;
       text-overflow: ellipsis;
       padding: 0 .1rem;
-      height: $card-title-height;
+      height: $groupcard-title-height;
       img {
         border-radius: 50%;
         display: inline-block;
         vertical-align: middle;
-        width: $card-logo-hw;
-        height: $card-logo-hw;
+        width: $groupcard-logo-hw;
+        height: $groupcard-logo-hw;
       }
     }
 
-    .card-desc {
-      height: $card-height - $card-title-height - $card-padding - $card-desc-padding * 2;
+    .groupcard-desc {
+      height: $groupcard-height - $groupcard-title-height - $groupcard-padding - $groupcard-desc-padding * 2;
       font-size: $sub-font-size;
       color: gray;
       overflow: hidden;
-      padding: $card-desc-padding 0px;
+      padding: $groupcard-desc-padding 0px;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 4;
@@ -74,37 +79,37 @@
   }
 
   @media (max-width: 480px) {
-    .card {
+    .groupcard {
       width: 80%;
-      margin: $card-margin-top 9% 0;
+      margin: $groupcard-margin-top 9% 0;
     }
   }
 
   @media (min-width: 481px) {
-    .card {
+    .groupcard {
       width: 43%;
-      margin: $card-margin-top 3% 0;
+      margin: $groupcard-margin-top 3% 0;
     }
   }
 
   @media (min-width: 768px) {
-    .card {
+    .groupcard {
       width: 30%;
-      margin: $card-margin-top 1.5% 0;
+      margin: $groupcard-margin-top 1.5% 0;
     }
   }
 
   @media (min-width: 1040px) {
-    .card {
+    .groupcard {
       width: 23%;
-      margin: $card-margin-top 0.85% 0;
+      margin: $groupcard-margin-top 0.85% 0;
     }
   }
 
   @media (min-width: 1200px) {
-    .card {
+    .groupcard {
       widows: 18%;
-      margin: $card-margin-top 1% 0;
+      margin: $groupcard-margin-top 1% 0;
     }
   }
 

@@ -1,17 +1,22 @@
 <template>
   <div class="group" :id="website.id">
     <p class="group-title">{{ website.group }}</p>
-    <Card v-for="link in website.links" :key="link.title" :card="link"></Card>
+    <GroupCard v-for="link in website.links" :key="link.title" :card="link"></GroupCard>
   </div>
 </template>
 
 <script>
-  import Card from './Card'
+  import GroupCard from './GroupCard'
   export default {
     name: 'Group',
-    props: ['website'],
+    props: {
+      website: {
+        type: Object,
+        required: true
+      }
+    },
     components: {
-      Card
+      GroupCard
     },
     data() {
       return {

@@ -8,8 +8,13 @@
 
 <script>
   export default {
-    name: 'Sidebar',
-    props: ['websites'],
+    name: 'TheSidebar',
+    props: {
+      websites: {
+        type: Array,
+        required: true
+      }
+    },
     data() {
       return {
         childrenArr: null,

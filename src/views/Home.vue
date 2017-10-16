@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <Sidebar :websites="websites"></Sidebar>  
+    <TheSidebar :websites="websites"></TheSidebar>  
     <Group v-for="website in websites" :key="website.id" :website="website"></Group>
   </div>
 </template>
@@ -8,12 +8,12 @@
 <script>
   import websites from '../assets/websites'
   import Group from '../components/Group'
-  import Sidebar from '../components/Sidebar'
+  import TheSidebar from '../components/TheSidebar'
   export default {
     name: 'Home',
     components: {
       Group,
-      Sidebar
+      TheSidebar
     },
     data() {
       return {
