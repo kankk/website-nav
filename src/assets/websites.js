@@ -8,6 +8,11 @@ const team = {
     description: '腾讯Web前端团队',
     icon: './static/icons/alloyteam.jpg',
   }, {
+    title: 'FED',
+    link: 'http://taobaofed.org/',
+    description: '内容涵盖Web和Node',
+    icon: './static/icons/fed.png'
+  }, {
     title: '奇舞团',
     link: 'https://75team.com/',
     description: '奇虎360前端开发团队',
@@ -61,6 +66,11 @@ const portal = {
     link: 'http://www.daqianduan.com/',
     description: '前端技术',
     icon: './static/icons/daqianduan.png'
+  }, {
+    title: 'Awesomes.cn',
+    link: 'https://www.awesomes.cn/',
+    description: '国人维护的前端资源库, 深度对接到Github, 分类和展现清晰',
+    icon: './static/icons/awesomes.png'
   }]
 };
 
@@ -88,6 +98,16 @@ const frame = {
     link: 'https://reactnative.cn/',
     description: '使用React构建原生app的框架',
     icon: './static/icons/react.png'
+  }, {
+    title: 'Element',
+    link: 'http://element.eleme.io/2.0/#/zh-CN/',
+    description: '饿了么前端团队出品的基于Vue的UI组件库',
+    icon: ''
+  }, {
+    title: 'Ant Design',
+    link: 'https://ant.design/index-cn',
+    description: '蚂蚁金服前端团队出品的基于React的UI组件库',
+    icon: ''
   }]
 };
 
@@ -219,6 +239,11 @@ const blog = {
     title: '张鑫旭',
     link: 'http://www.zhangxinxu.com/wordpress/',
     description: 'CSS, 阅文集团',
+    icon: ''
+  } ,{
+    title: '阮一峰',
+    link: 'http://www.ruanyifeng.com/blog/',
+    description: '',
     icon: ''
   }]
 };
