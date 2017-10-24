@@ -62,11 +62,6 @@ const portal = {
     description: '推广前端行业技术',
     icon: './static/icons/w3cplus.png'
   }, {
-    title: '大前端',
-    link: 'http://www.daqianduan.com/',
-    description: '前端技术',
-    icon: './static/icons/daqianduan.png'
-  }, {
     title: 'Awesomes.cn',
     link: 'https://www.awesomes.cn/',
     description: '国人维护的前端资源库, 深度对接到Github, 分类和展现清晰',
@@ -161,12 +156,29 @@ const doc = {
     description: '',
     icon: './static/icons/redux.png'
   }, {
-    title: 'jQuery API (英文)',
-    link: 'http://api.jquery.com/',
+    title: 'jQuery 中文文档(非官方)',
+    link: 'http://jquery.cuishifeng.cn/',
     description: '',
     icon: './static/icons/jquery.png'
   }]
 };
+
+// 教程
+const tutorial = {
+  id: 'tutorial',
+  group: 'tutorial',
+  links: [{
+    title: 'ES^ Katas',
+    link: 'http://es6katas.org/',
+    description: '通过单元测试的方式学习ES6, 强烈推荐',
+    icon: ''
+  }, {
+    title: 'React-Router Training',
+    link: 'https://reacttraining.com/react-router/',
+    description: '英文文档, 学习RR4的优秀文档',
+    icon: './static/icons/react-router-train.png'
+  }]
+}
 
 // CSS
 const css = {
@@ -248,6 +260,7 @@ const blog = {
   }]
 };
 
+// 设计
 const design = {
   id: 'design',
   group: '设计相关',
@@ -265,6 +278,7 @@ export default [
   portal,
   frame,
   doc,
+  tutorial,
   css,
   node,
   feTool,
