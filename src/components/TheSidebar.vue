@@ -35,7 +35,7 @@
         // 当前Element为active
         e.target.className = 'active';
         const toElement = document.getElementById(clickId);
-        document.body.scrollTop = toElement.offsetTop;
+        document.documentElement.scrollTop = toElement.offsetTop;
       },
       throttle(fn, wait) {
         let timeout, context, args;
@@ -66,7 +66,7 @@
         return throttled;
       },
       onScrollHandler() {
-        const _scrollTop = document.body.scrollTop + 21;
+        const _scrollTop = document.documentElement.scrollTop + 21;
         let currentGroupId;
         let minOffset;
 
