@@ -160,6 +160,11 @@ const doc = {
     link: 'http://jquery.cuishifeng.cn/',
     description: '',
     icon: './static/icons/jquery.png'
+  }, {
+    title: 'TypeScript指南(非官方)',
+    link: 'https://www.gitbook.com/book/zhongsp/typescript-handbook/details/',
+    description: '',
+    icon: ''
   }]
 };
 
