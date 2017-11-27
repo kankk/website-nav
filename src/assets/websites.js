@@ -35,11 +35,6 @@ const community = {
     description: '中文技术社区',
     icon: './static/icons/gold.png',
   }, {
-    title: 'SegmentFault',
-    link: 'https://segmentfault.com/',
-    description: '中文IT技术问答网站',
-    icon: './static/icons/segmentfault.png',
-  }, {
     title: 'GitHub',
     link: 'https://github.com/',
     description: '开源/私有软件项目的Git托管平台',
@@ -85,7 +80,7 @@ const frame = {
     icon: './static/icons/react.png'
   }, {
     title: 'React (中文)',
-    link: 'http://www.react-cn.com/',
+    link: 'https://doc.react-china.org/',
     description: '用于构建用户界面的JavaScript库',
     icon: './static/icons/react.png'
   }, {
