@@ -98,6 +98,16 @@ const frame = {
     link: 'https://ant.design/index-cn',
     description: '蚂蚁金服前端团队出品的基于React的UI组件库',
     icon: ''
+  }, {
+    title: 'AntV',
+    link: 'http://antv.alipay.com/zh-cn/index.html',
+    description: '蚂蚁金服前端团队出品的数据可视化解决方案',
+    icon: ''
+  }, {
+    title: 'Lavas',
+    link: 'https://lavas.baidu.com/',
+    description: '',
+    icon: '百度出品的基于Vue的PWA解决方案, 帮助开发者快速搭建PWA应用, 解决接入PWA的各种问题'
   }]
 };
 
@@ -166,7 +176,7 @@ const doc = {
 // 教程
 const tutorial = {
   id: 'tutorial',
-  group: 'tutorial',
+  group: '教程',
   links: [{
     title: 'ES^ Katas',
     link: 'http://es6katas.org/',
