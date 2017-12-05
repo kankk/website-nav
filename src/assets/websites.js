@@ -106,8 +106,8 @@ const frame = {
   }, {
     title: 'Lavas',
     link: 'https://lavas.baidu.com/',
-    description: '',
-    icon: '百度出品的基于Vue的PWA解决方案, 帮助开发者快速搭建PWA应用, 解决接入PWA的各种问题'
+    description: '百度出品的基于Vue的PWA解决方案, 帮助开发者快速搭建PWA应用, 解决接入PWA的各种问题',
+    icon: ''
   }]
 };
 
