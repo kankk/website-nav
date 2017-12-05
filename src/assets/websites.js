@@ -44,6 +44,11 @@ const community = {
     link: 'http://react-china.org/',
     description: '',
     icon: './static/icons/reactchina.png',
+  }, {
+    title: 'V2EX',
+    link: 'https://www.v2ex.com/',
+    description: '一个汇集各类奇妙好玩的话题和流行动向的网站',
+    icon: ''
   }]
 };
 
@@ -215,6 +220,11 @@ const node = {
     title: 'Express',
     link: 'http://www.expressjs.com.cn/',
     description: '基于Node.js的Web开发框架',
+    icon: ''
+  }, {
+    title: '如何通过饿了么 Node.js 面试',
+    link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/',
+    description: 'Node教程',
     icon: ''
   }]
 };
