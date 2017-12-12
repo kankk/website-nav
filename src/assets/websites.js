@@ -226,6 +226,11 @@ const node = {
     link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/',
     description: 'Node教程',
     icon: ''
+  }, {
+    title: 'Sequelize.js',
+    link: 'http://docs.sequelizejs.com/',
+    description: 'Node.js的ORM库',
+    icon: './static/icons/sequelizejs.png'
   }]
 };
 
