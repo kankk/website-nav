@@ -3,6 +3,12 @@
     <ul id="sidebar-ul">
       <li v-for="website in websites" :data-id="website.id" :key="website.id" @click="onItemClickHandler">{{ website.group }}</li>
     </ul>
+    <div class="sidebar-about">
+    </div>
+    <div class="sidebar-copyright">
+      版权©2017,
+      <a href="https://github.com/kankk" target="_blank">Kankk</a>
+    </div>
   </div>
 </template>
 
@@ -128,7 +134,7 @@
 
       ul {
         margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 60px;
 
         li {
           font-size: $sub-font-size;
@@ -143,6 +149,31 @@
 
         li.active {
           color: $sidebar-li-active;
+        }
+      }
+
+      .sidebar-about {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        left: 0;
+      }
+
+      .sidebar-copyright {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+
+        a {
+          color: #999;
+        }
+
+        a:hover {
+          color: #eee;
         }
       }
     }

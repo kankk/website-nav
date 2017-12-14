@@ -1,9 +1,8 @@
 # website-nav
+## 简介
+> website-nav是一个基于Vue构建的网站
 
-> A Vue.js project
-
-## Build Setup
-
+## 构建项目步骤
 ``` bash
 # install dependencies
 npm install
@@ -13,9 +12,7 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 自定义
+如果想自定义网站导航的话, 只需要修改`src/assets/websites.js`文件和把图片icon放到`static/icons`中即可
