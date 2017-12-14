@@ -176,9 +176,9 @@ const doc = {
     description: '',
     icon: './static/icons/jquery.png'
   }, {
-    title: 'TypeScript指南(非官方)',
-    link: 'https://www.gitbook.com/book/zhongsp/typescript-handbook/details/',
-    description: '',
+    title: 'TypeScript中文文档',
+    link: 'https://www.tslang.cn/index.html/',
+    description: '官方网站(http://www.typescriptlang.org/)的中文翻译',
     icon: ''
   }]
 };
