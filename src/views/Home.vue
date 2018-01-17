@@ -32,7 +32,7 @@
 
   #home {
     &:first-child {
-      margin-top: 20px;
+      margin-top: $group-margin-bottom;
     }
   }
 </style>

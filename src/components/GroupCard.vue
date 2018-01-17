@@ -48,6 +48,10 @@
     padding: $groupcard-padding;
     float: left;
 
+    &:hover {
+      background-color: rgba($color: #4d4d4d, $alpha: 0.1);
+    }
+
     .groupcard-title {
       font-size: $main-font-size;
       font-weight: 700;
@@ -68,6 +72,7 @@
     .groupcard-desc {
       height: $groupcard-height - $groupcard-title-height - $groupcard-padding - $groupcard-desc-padding * 2;
       font-size: $sub-font-size;
+      line-height: 1.5em;
       color: gray;
       overflow: hidden;
       padding: $groupcard-desc-padding 0px;

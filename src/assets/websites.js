@@ -35,15 +35,15 @@ const community = {
     description: '中文技术社区',
     icon: './static/icons/gold.png',
   }, {
-    title: '简书',
-    link: 'http://www.jianshu.com/',
-    description: '文字创作社区',
-    icon: './static/icons/jianshu.jpg'
-  }, {
     title: 'GitHub',
     link: 'https://github.com/',
     description: '开源/私有软件项目的Git托管平台',
     icon: './static/icons/github.png',
+  }, {
+    title: 'Vue中文论坛',
+    link: 'https://forum.vuejs.org/c/chinese',
+    description: 'Vue官方中文论坛',
+    icon: '',
   }, {
     title: 'React China',
     link: 'http://react-china.org/',

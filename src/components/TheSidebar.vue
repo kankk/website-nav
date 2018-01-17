@@ -137,7 +137,7 @@
         margin-top: 60px;
 
         li {
-          font-size: $sub-font-size;
+          font-size: $main-font-size;
           padding: 10px 0;
           color: #6b7386;
 
