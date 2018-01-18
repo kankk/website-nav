@@ -114,6 +114,16 @@ const frame = {
     description: '蚂蚁金服前端团队出品的数据可视化解决方案',
     icon: ''
   }, {
+    title: 'Moment.js',
+    link: 'http://momentjs.cn/',
+    description: '用于日期格式化处理的JavaScript类库',
+    icon: ''
+  }, {
+    title: 'Numeral.js',
+    link: 'http://numeraljs.com/',
+    description: '用于格式化和数字四则运算的JavaScript类库',
+    icon: ''
+  }, {
     title: 'Lavas',
     link: 'https://lavas.baidu.com/',
     description: '百度出品的基于Vue的PWA解决方案, 帮助开发者快速搭建PWA应用, 解决接入PWA的各种问题',

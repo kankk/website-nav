@@ -40,7 +40,7 @@
     overflow: hidden;
 
     .group-title {
-      padding: 12px 0 0 2%;
+      padding: 6px 0 0 2%;
       font-family: "PingRegular";
     }
   }
