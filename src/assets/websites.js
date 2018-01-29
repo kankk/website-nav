@@ -35,6 +35,11 @@ const community = {
     description: '中文技术社区',
     icon: './static/icons/gold.png',
   }, {
+    title: 'CNode',
+    link: 'https://cnodejs.org/',
+    description: '最大Node.js中文社区',
+    icon: ''
+  }, {
     title: 'GitHub',
     link: 'https://github.com/',
     description: '开源/私有软件项目的Git托管平台',
