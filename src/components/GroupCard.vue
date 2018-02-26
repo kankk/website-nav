@@ -1,5 +1,5 @@
 <template>
-  <a class="groupcard-a" target="_blank" :href="card.link">
+  <a class="groupcard-a" target="_blank" :href="card.link" @click="handleCardClick(card)">
     <div class="groupcard">
       <div class="groupcard-title">
         <img v-if="card.icon" :src="card.icon">
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+  import axios from 'axios';
   export default {
     name: 'GroupCard',
     props: {
@@ -27,7 +28,15 @@
       }
     },
     methods: {
-
+      handleCardClick(card) {
+        axios({
+          method: 'POST',
+          url: 'http://data.mangokk.me/api/trace/website',
+          data: {
+            link: card.link
+          }
+        });
+      }
     }
   }
 
