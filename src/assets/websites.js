@@ -212,6 +212,11 @@ const tutorial = {
     link: 'https://reacttraining.com/react-router/',
     description: '英文文档, 学习RR4的优秀文档',
     icon: './static/icons/react-router-train.png'
+  }, {
+    title: 'React小书',
+    link: 'http://huziketang.com/books/react/',
+    description: '',
+    icon: ''
   }]
 }
 
