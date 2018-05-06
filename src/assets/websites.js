@@ -256,6 +256,11 @@ const node = {
     link: 'http://docs.sequelizejs.com/',
     description: 'Node.js的ORM库',
     icon: './static/icons/sequelizejs.png'
+  }, {
+    title: 'Egg.js',
+    link: 'http://eggjs.org/zh-cn/',
+    description: 'Egg.js 为企业级框架和应用而生',
+    icon: ''
   }]
 };
 

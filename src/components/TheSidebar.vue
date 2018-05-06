@@ -6,7 +6,7 @@
     <div class="sidebar-about">
     </div>
     <div class="sidebar-copyright">
-      版权©2017,
+      版权©2017-2018,
       <a href="https://github.com/kankk" target="_blank">Kankk</a>
     </div>
   </div>
