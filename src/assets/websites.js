@@ -220,23 +220,6 @@ const tutorial = {
   }]
 }
 
-// CSS
-const css = {
-  id: 'css',
-  group: 'CSS',
-  links: [{
-    title: 'SASS',
-    link: 'http://sass.bootcss.com/',
-    description: 'CSS扩展语言',
-    icon: './static/icons/sass.png'
-  }, {
-    title: 'Less',
-    link: 'http://less.bootcss.com/',
-    description: '将css赋予了动态语言特性的动态式语言',
-    icon: './static/icons/less.png'
-  }]
-};
-
 // Node.js
 const node = {
   id: 'node',
@@ -334,7 +317,6 @@ export default [
   frame,
   doc,
   tutorial,
-  css,
   node,
   feTool,
   onlineTool,
