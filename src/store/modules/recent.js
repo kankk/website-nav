@@ -1,10 +1,37 @@
 import {
-  GET_RECENT_LIST,
-  SET_RECENT_LIST
+  ADD_RECENT_ITEM
 } from '../mutation-types'
 
+const RECENT_LIST_KEY = 'RECENT_LIST_KEY'
+const RECENT_LIST_MAX = 5
+
+// 列表缓存到本地
+const setListToLocal = (list) => {
+  window.localStorage.setItem(RECENT_LIST_KEY, JSON.stringify(list))
+}
+
+// 初始化列表
+const initRecentList = () => {
+  let _list = []
+  const localRecentListStr = window.localStorage.getItem(RECENT_LIST_KEY)
+  if (localRecentListStr) {
+    try {
+      _list = JSON.parse(localRecentListStr)
+    } catch (err) {
+
+    }
+  }
+
+  const list = _list.map(item => {
+    delete item.count
+    return item
+  })
+
+  return list
+}
+
 const state = {
-  list: []
+  list: initRecentList()
 }
 
 const getters = {
@@ -12,23 +39,27 @@ const getters = {
 }
 
 const actions = {
-  initRecentList ({ commit, state }) {
+  addRecentItem ({ commit, state }, item) {
+    const nextItem = Object.assign({}, item)
+    delete nextItem.count
 
-  },
-  setRecentList ({ commit, state }) {
+    // 查找最近点击的列表中是否已经存在
+    const nextList = state.list.slice(0).filter(_item => _item.link !== item.link)
 
-  },
-  addRecentItem ({ commit, state }) {
-
+    if (nextList.length >= RECENT_LIST_MAX) {
+      nextList.pop()
+      nextList.unshift(nextItem)
+    } else {
+      nextList.unshift(nextItem)
+    }
+    commit(ADD_RECENT_ITEM, nextList)
+    setListToLocal(nextList)
   }
 }
 
 const mutations = {
-  [GET_RECENT_LIST] (state) {
-
-  },
-  [SET_RECENT_LIST] (state, list = []) {
-
+  [ADD_RECENT_ITEM] (state, list = []) {
+    state.list = list
   }
 }
 

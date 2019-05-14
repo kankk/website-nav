@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <!-- <recent /> -->
+    <recent />
     <whole />
   </div>
 </template>
