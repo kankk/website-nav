@@ -45,6 +45,7 @@ export default {
     font-size: 14px;
     color: #333;
     line-height: 28px;
+    text-align: center;
   }
   .list {
     display: flex;
