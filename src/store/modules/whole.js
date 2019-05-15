@@ -3,7 +3,8 @@ import websites from '@/assets/websites'
 import Utlis from '../../utlis/websites'
 
 import {
-  COUNT_WHOLE_ITEM
+  COUNT_WHOLE_ITEM,
+  DELETE_WHOLE_ITEM
 } from '../mutation-types'
 
 const WHOLE_LIST_KEY = 'WHOLE_LIST_KEY'
@@ -54,6 +55,11 @@ const getters = {
 const actions = {
   clickWholeItem ({ commit }, item) {
     commit(COUNT_WHOLE_ITEM, item)
+  },
+  deleteWholeItem ({ commit, state }, item) {
+    const filterList = state.list.filter(_item => item.link !== _item.link)
+    commit(DELETE_WHOLE_ITEM, filterList)
+    setListToLocal(filterList)
   }
 }
 
@@ -62,6 +68,9 @@ const mutations = {
     item.count++
 
     setListToLocal(state.list)
+  },
+  [DELETE_WHOLE_ITEM] (state, list) {
+    state.list = list
   }
 }
 

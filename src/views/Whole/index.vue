@@ -2,7 +2,7 @@
   <div id="whole">
     <div class="title">所有页面</div>
     <div class="list">
-      <website-item v-for="item in wholeList" :item="item" :key="`${item.link}`" @click="handleWebsiteItemClick(item)"/>
+      <website-item v-for="item in wholeList" :item="item" :key="`${item.link}`" :with-close="true" @click="handleWebsiteItemClick(item)" @delete="handleWebsiteItemDelete(item)"/>
     </div>
   </div>
 </template>
@@ -23,13 +23,19 @@ export default {
   methods: {
     ...mapActions([
       'clickWholeItem',
+      'deleteWholeItem',
       'addRecentItem'
     ]),
+    // 点击网站导航项
     handleWebsiteItemClick (item) {
-      // window.open(item.link)
+      window.open(item.link)
 
       this.addRecentItem(item)
       this.clickWholeItem(item)
+    },
+    // 点击删除网站导航项
+    handleWebsiteItemDelete (item) {
+      this.deleteWholeItem(item)
     }
   },
   computed: {

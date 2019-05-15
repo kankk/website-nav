@@ -1,5 +1,6 @@
 <template>
   <div class="website_item" @click="$emit('click')">
+    <icon-close v-if="withClose" class="item_close" @close="$emit('delete')" :size="12"/>
     <div class="item_icon_wrap">
       <img class="item_icon" v-if="item.icon" :src="item.icon" />
       <div class="item_icon_default" :style="{ 'background-color': item.bgColor }" v-else>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import IconClose from '../icon_close'
 export default {
   name: 'WebsiteItem',
   props: {
@@ -18,7 +20,14 @@ export default {
       type: Object,
       default: () => {},
       required: true
+    },
+    withClose: {
+      type: Boolean,
+      default: () => false
     }
+  },
+  components: {
+    IconClose
   },
   data () {
     return {
@@ -40,6 +49,7 @@ export default {
   box-sizing: border-box;
   border-radius: 4px;
   transition: transform 0.2s linear;
+  position: relative;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -47,6 +57,9 @@ export default {
     // transform: scale(1.1);
     .item_title {
       color: rgb(0, 0, 0);
+    }
+    .item_close {
+      display: inline-block;
     }
   }
   .item_icon_wrap {
@@ -57,6 +70,13 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  .item_close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: none;
   }
   .item_icon {
     width:@item_size;
