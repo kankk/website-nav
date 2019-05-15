@@ -28,7 +28,7 @@ export default {
 
 <style lang="less" scope>
 #home {
-  width: 720px;
+  width: 640px;
   margin: 0 auto;
 }
 </style>

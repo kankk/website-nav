@@ -1,5 +1,6 @@
 import {
-  ADD_RECENT_ITEM
+  ADD_RECENT_ITEM,
+  RESET_RECENT_LIST
 } from '../mutation-types'
 
 const RECENT_LIST_KEY = 'RECENT_LIST_KEY'
@@ -54,12 +55,19 @@ const actions = {
     }
     commit(ADD_RECENT_ITEM, nextList)
     setListToLocal(nextList)
+  },
+  resetRecentList ({ commit }) {
+    window.localStorage.removeItem(RECENT_LIST_KEY)
+    commit(RESET_RECENT_LIST)
   }
 }
 
 const mutations = {
   [ADD_RECENT_ITEM] (state, list = []) {
     state.list = list
+  },
+  [RESET_RECENT_LIST] (state) {
+    state.list = []
   }
 }
 

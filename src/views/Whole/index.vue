@@ -43,6 +43,7 @@ export default {
 <style lang="less" scoped>
 #whole {
   width: 100%;
+  padding-top: 8px;
   .title {
     font-size: 14px;
     color: #333;

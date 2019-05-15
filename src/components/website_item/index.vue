@@ -44,7 +44,7 @@ export default {
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transform: scale(1.1);
+    // transform: scale(1.1);
     .item_title {
       color: rgb(0, 0, 0);
     }
