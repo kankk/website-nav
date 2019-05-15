@@ -1,5 +1,5 @@
 <template>
-  <div id="recent">
+  <div id="recent" v-if="recentList.length">
     <div class="title">最近点击</div>
     <div class="list">
       <website-item v-for="item in recentList" :item="item" :key="`${item.link}`" @click="handleWebsiteItemClick(item)"/>

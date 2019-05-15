@@ -2,6 +2,10 @@ import websites from '@/assets/websites'
 
 import Utlis from '../../utlis/websites'
 
+import {
+  COUNT_WHOLE_ITEM
+} from '../mutation-types'
+
 const WHOLE_LIST_KEY = 'WHOLE_LIST_KEY'
 
 // 列表缓存到本地
@@ -43,15 +47,22 @@ const state = {
 }
 
 const getters = {
-  wholeList: state => state.list.slice(0).sort((a, b) => a.count - b.count)
+  // 按点击次数降序
+  wholeList: state => state.list.slice(0).sort((a, b) => b.count - a.count)
 }
 
 const actions = {
-
+  clickWholeItem ({ commit }, item) {
+    commit(COUNT_WHOLE_ITEM, item)
+  }
 }
 
 const mutations = {
+  [COUNT_WHOLE_ITEM] (state, item) {
+    item.count++
 
+    setListToLocal(state.list)
+  }
 }
 
 export default {

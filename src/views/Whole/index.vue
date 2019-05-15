@@ -22,12 +22,14 @@ export default {
   },
   methods: {
     ...mapActions([
+      'clickWholeItem',
       'addRecentItem'
     ]),
     handleWebsiteItemClick (item) {
       // window.open(item.link)
 
       this.addRecentItem(item)
+      this.clickWholeItem(item)
     }
   },
   computed: {

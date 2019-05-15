@@ -35,10 +35,12 @@ export default {
   align-items: center;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: transform 0.2s linear;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transform: scale(1.1);
     .item_title {
       color: rgb(0, 0, 0);
     }
