@@ -40,6 +40,7 @@ export default {
   }
 
   &:hover {
+    cursor: pointer;
     .icon_close_v {
       background-color: @close_color_hover;
     }

@@ -53,6 +53,7 @@ export default {
     line-height: 28px;
     text-align: center;
     position: relative;
+    border-radius: 4px;
     .clear_localstorage {
       visibility: hidden;
       position: absolute;

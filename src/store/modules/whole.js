@@ -1,4 +1,4 @@
-import websites from '@/assets/websites'
+import websites from '@/assets/websites.json'
 
 import Utlis from '../../utlis/websites'
 

@@ -1,10 +1,13 @@
 <template>
   <div id="whole">
     <div class="search">
-      <input class="search_input" :class="{ 'active': !!searchKey }" v-model="searchKey" placeholder="关键字搜索"/>
+      <input class="search_input" :class="{ 'active': !!searchKey }" v-model="searchKey" placeholder="搜索"/>
       <icon-close :style="{ 'visibility': !!searchKey ? 'visible' : 'hidden' }" class="search_input_clear" @close="handleClearFilter" :size="16"/>
     </div>
-    <div class="title">所有页面</div>
+    <div class="title">
+      <span>所有页面</span>
+      <span class="show_setting" @click="$emit('setting')">设置</span>
+    </div>
     <div class="list">
       <website-item v-for="item in filterWholeList" :item="item" :key="`${item.link}`" :with-close="true" @click="handleWebsiteItemClick(item)" @delete="handleWebsiteItemDelete(item)"/>
     </div>
@@ -77,11 +80,13 @@ export default {
       border-radius: 7px;
       border: 1px solid #ddd;
       padding: 4px 8px;
-      margin-right: 12px;
+      margin-right: 8px;
+      margin-left: 24px;
       transition: all 0.2s linear;
       color: #333;
       &::-webkit-input-placeholder {
         color: #ddd;
+        text-align: center;
       }
       &:focus {
         .search_active;
@@ -101,6 +106,26 @@ export default {
     color: #333;
     line-height: 28px;
     text-align: center;
+    position: relative;
+    border-radius: 4px;
+    .show_setting {
+      visibility: hidden;
+      position: absolute;
+      right: 12px;
+      font-size: 14px;
+      color: #999;
+      line-height: 28px;
+      &:hover {
+        color: #666;
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      .show_setting {
+        visibility: visible;
+      }
+    }
   }
   .list {
     display: flex;
