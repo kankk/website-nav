@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import IconClose from '../icon_close'
 export default {
   name: 'WebsiteItem',
   props: {
@@ -25,9 +24,6 @@ export default {
       type: Boolean,
       default: () => false
     }
-  },
-  components: {
-    IconClose
   },
   data () {
     return {

@@ -12,16 +12,12 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import WebsiteItem from '../../components/website_item'
 export default {
   name: 'Recent',
   data () {
     return {
       list: []
     }
-  },
-  components: {
-    WebsiteItem
   },
   methods: {
     ...mapActions([
