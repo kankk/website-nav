@@ -7,12 +7,13 @@
   <div class="setting_list">
     <span class="setting_item" @click="handleExportWebsites">导出配置</span>
     <!-- <span class="setting_item" @click="handleImportWebsites">导入配置</span> -->
+    <span class="setting_item" @click="handleResetSort">恢复默认排序</span>
   </div>
 </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'Setting',
   data () {
@@ -21,6 +22,9 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'resetWholeCount'
+    ]),
     // 导出配置
     handleExportWebsites () {
       // 导出的字符串
@@ -42,6 +46,10 @@ export default {
     // 导入配置
     handleImportWebsites () {
 
+    },
+    // 恢复网站的默认排序
+    handleResetSort () {
+      this.resetWholeCount()
     }
   },
   computed: {

@@ -4,14 +4,36 @@ import Utlis from '../../utlis/websites'
 
 import {
   COUNT_WHOLE_ITEM,
-  DELETE_WHOLE_ITEM
+  DELETE_WHOLE_ITEM,
+  RESET_WHOLE_COUNT
 } from '../mutation-types'
 
 const WHOLE_LIST_KEY = 'WHOLE_LIST_KEY'
+const WHOLE_DELETE_LIST_KEY = 'WHOLE_DELETE_LIST_KEY'
 
 // 列表缓存到本地
 const setListToLocal = (list) => {
   window.localStorage.setItem(WHOLE_LIST_KEY, JSON.stringify(list))
+}
+
+// 缓存被删除的项目
+const storeDeletedItem = (item) => {
+  const localDeletedListStr = window.localStorage.getItem(WHOLE_DELETE_LIST_KEY)
+  let localDeletedList = []
+  if (localDeletedListStr) {
+    localDeletedList = JSON.parse(localDeletedListStr)
+  }
+
+  for (let _item of localDeletedList) {
+    // 如果已经存在与本地缓存, 忽略
+    if (_item.link === item.link) {
+      return
+    }
+  }
+
+  localDeletedList.push(item)
+
+  window.localStorage.setItem(WHOLE_DELETE_LIST_KEY, JSON.stringify(localDeletedList))
 }
 
 // 初始化列表
@@ -60,6 +82,11 @@ const actions = {
     const filterList = state.list.filter(_item => item.link !== _item.link)
     commit(DELETE_WHOLE_ITEM, filterList)
     setListToLocal(filterList)
+
+    storeDeletedItem(item)
+  },
+  resetWholeCount ({ commit }) {
+    commit(RESET_WHOLE_COUNT)
   }
 }
 
@@ -71,6 +98,14 @@ const mutations = {
   },
   [DELETE_WHOLE_ITEM] (state, list) {
     state.list = list
+  },
+  [RESET_WHOLE_COUNT] (state, list) {
+    state.list = state.list.map(item => {
+      item.count = 0
+      return item
+    })
+
+    setListToLocal(state.list)
   }
 }
 
