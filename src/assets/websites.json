@@ -1,11 +1,5 @@
 [
   {
-    "title": "掘金",
-    "link": "https://juejin.im/",
-    "description": "中文技术社区",
-    "icon": "https://nav.mangokk.me/icons/gold.png"
-  },
-  {
     "title": "AlloyTeam",
     "link": "http://www.alloyteam.com/",
     "description": "腾讯Web前端团队",
@@ -24,24 +18,12 @@
     "icon": "https://nav.mangokk.me/icons/75team.png"
   },
   {
-    "title": "凹凸实验室",
-    "link": "https://aotu.io/",
-    "description": "京东用户体验设计部",
-    "icon": "https://nav.mangokk.me/icons/aotu.png"
-  },
-  {
     "title": "CNode",
     "link": "https://cnodejs.org/",
     "description": "最大Node.js中文社区",
     "icon": "",
     "bgColor": "#226b80",
     "color": "#ffffff"
-  },
-  {
-    "title": "GitHub",
-    "link": "https://github.com/",
-    "description": "开源/私有软件项目的Git托管平台",
-    "icon": "https://nav.mangokk.me/icons/github.png"
   },
   {
     "title": "Vue中文论坛",
@@ -58,30 +40,10 @@
     "icon": "https://nav.mangokk.me/icons/reactchina.png"
   },
   {
-    "title": "V2EX",
-    "link": "https://www.v2ex.com/",
-    "description": "一个汇集各类奇妙好玩的话题和流行动向的网站",
-    "icon": "",
-    "bgColor": "#4e4e4e",
-    "color": "#ffffff"
-  },
-  {
-    "title": "W3cplus",
-    "link": "http://www.w3cplus.com/",
-    "description": "推广前端行业技术",
-    "icon": "https://nav.mangokk.me/icons/w3cplus.png"
-  },
-  {
     "title": "Awesomes.cn",
     "link": "https://www.awesomes.cn/",
     "description": "国人维护的前端资源库, 深度对接到Github, 分类和展现清晰",
     "icon": "https://nav.mangokk.me/icons/awesomes.png"
-  },
-  {
-    "title": "Vue (中文)",
-    "link": "https://cn.vuejs.org/",
-    "description": "构建数据驱动的web界面的渐进式框架",
-    "icon": "https://nav.mangokk.me/icons/vue.png"
   },
   {
     "title": "React (英文)",
@@ -126,25 +88,9 @@
     "color": "#ffffff"
   },
   {
-    "title": "Moment.js",
-    "link": "http://momentjs.cn/",
-    "description": "用于日期格式化处理的JavaScript类库",
-    "icon": "",
-    "bgColor": "#e14594",
-    "color": "#ffffff"
-  },
-  {
     "title": "Numeral.js",
     "link": "http://numeraljs.com/",
     "description": "用于格式化和数字四则运算的JavaScript类库",
-    "icon": "",
-    "bgColor": "#113f67",
-    "color": "#ffffff"
-  },
-  {
-    "title": "Lavas",
-    "link": "https://lavas.baidu.com/",
-    "description": "百度出品的基于Vue的PWA解决方案, 帮助开发者快速搭建PWA应用, 解决接入PWA的各种问题",
     "icon": "",
     "bgColor": "#113f67",
     "color": "#ffffff"
@@ -174,24 +120,6 @@
     "icon": "https://nav.mangokk.me/icons/vue.png"
   },
   {
-    "title": "Vue 风格指南",
-    "link": "https://cn.vuejs.org/v2/style-guide/",
-    "description": "官方代码风格指南",
-    "icon": "https://nav.mangokk.me/icons/vue.png"
-  },
-  {
-    "title": "vue-router",
-    "link": "https://router.vuejs.org/zh-cn/",
-    "description": "",
-    "icon": "https://nav.mangokk.me/icons/vue.png"
-  },
-  {
-    "title": "Vuex",
-    "link": "https://vuex.vuejs.org/zh-cn/",
-    "description": "",
-    "icon": "https://nav.mangokk.me/icons/vue.png"
-  },
-  {
     "title": "react-router",
     "link": "http://www.uprogrammer.cn/react-router-cn/index.html",
     "description": "",
@@ -210,13 +138,14 @@
     "icon": "https://nav.mangokk.me/icons/jquery.png"
   },
   {
-    "title": "TypeScript中文文档",
-    "link": "https://www.tslang.cn/index.html/",
-    "description": "官方网站(http://www.typescriptlang.org/)的中文翻译",
+    "title": "TypeScript中入门教程",
+    "link": "https://ts.xcatliu.com/",
+    "description": "TypeScript中入门教程",
     "icon": "",
     "bgColor": "#00a8b5",
     "color": "#ffffff"
   },
+  
   {
     "title": "ES^ Katas",
     "link": "http://es6katas.org/",
@@ -235,14 +164,6 @@
     "title": "React小书",
     "link": "http://huziketang.com/books/react/",
     "description": "",
-    "icon": "",
-    "bgColor": "#421b9b",
-    "color": "#ffffff"
-  },
-  {
-    "title": "Express",
-    "link": "http://www.expressjs.com.cn/",
-    "description": "基于Node.js的Web开发框架",
     "icon": "",
     "bgColor": "#421b9b",
     "color": "#ffffff"
